@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/cc  -I/home/tudor/basic/thirdparty/glad/include  -o CMakeFiles/glad.dir/thirdparty/glad/src/glad.c.o -c /home/tudor/basic/thirdparty/glad/src/glad.c",
+  "file": "/home/tudor/basic/thirdparty/glad/src/glad.c",
+  "output": "CMakeFiles/glad.dir/thirdparty/glad/src/glad.c.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/cc  -I/home/tudor/basic/thirdparty/stb  -o CMakeFiles/stb_image.dir/thirdparty/stb/stb_image.c.o -c /home/tudor/basic/thirdparty/stb/stb_image.c",
+  "file": "/home/tudor/basic/thirdparty/stb/stb_image.c",
+  "output": "CMakeFiles/stb_image.dir/thirdparty/stb/stb_image.c.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/src/main.cpp.o -c /home/tudor/basic/src/main.cpp",
+  "file": "/home/tudor/basic/src/main.cpp",
+  "output": "CMakeFiles/basic.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o -c /home/tudor/basic/graphics/Mesh/Mesh.cpp",
+  "file": "/home/tudor/basic/graphics/Mesh/Mesh.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o -c /home/tudor/basic/graphics/Shader/Shader.cpp",
+  "file": "/home/tudor/basic/graphics/Shader/Shader.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o -c /home/tudor/basic/graphics/Camera/Camera.cpp",
+  "file": "/home/tudor/basic/graphics/Camera/Camera.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Model/Model.cpp.o -c /home/tudor/basic/graphics/Model/Model.cpp",
+  "file": "/home/tudor/basic/graphics/Model/Model.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Model/Model.cpp.o"
+}
+]

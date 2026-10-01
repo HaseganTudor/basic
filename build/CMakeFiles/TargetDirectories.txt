@@ -1,0 +1,5 @@
+/home/tudor/basic/build/CMakeFiles/glad.dir
+/home/tudor/basic/build/CMakeFiles/stb_image.dir
+/home/tudor/basic/build/CMakeFiles/basic.dir
+/home/tudor/basic/build/CMakeFiles/edit_cache.dir
+/home/tudor/basic/build/CMakeFiles/rebuild_cache.dir
