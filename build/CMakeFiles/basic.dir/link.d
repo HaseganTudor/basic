@@ -7,6 +7,9 @@ basic: \
   CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o \
   CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o \
   CMakeFiles/basic.dir/graphics/Model/Model.cpp.o \
+  CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o \
+  CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o \
+  CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o \
   /usr/lib/libglfw.so.3.5 \
   /usr/lib/libassimp.so.6.0.5 \
   libglad.a \
@@ -72,6 +75,12 @@ CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o:
 CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o:
 
 CMakeFiles/basic.dir/graphics/Model/Model.cpp.o:
+
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o:
+
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o:
+
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o:
 
 /usr/lib/libglfw.so.3.5:
 

@@ -384,4 +384,43 @@ CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o: \
  /usr/include/c++/16/bits/codecvt.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/16/bits/fstream.tcc
+ /usr/include/c++/16/bits/fstream.tcc \
+ /home/tudor/basic/graphics/Bone/Bone.h \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/quaternion.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../ext/quaternion_exponential.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../ext/quaternion_exponential.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/norm.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/component_wise.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../detail/setup.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/component_wise.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../ext/scalar_common.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../ext/scalar_common.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/norm.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/quaternion.inl \
+ /home/tudor/basic/graphics/Model/Model.h \
+ /usr/include/assimp/Importer.hpp /usr/include/assimp/types.h \
+ /usr/include/assimp/defs.h /usr/include/assimp/config.h \
+ /usr/include/assimp/vector2.h /usr/include/assimp/vector3.h \
+ /usr/include/assimp/color4.h /usr/include/assimp/matrix3x3.h \
+ /usr/include/assimp/matrix4x4.h /usr/include/assimp/quaternion.h \
+ /usr/include/assimp/vector2.inl /usr/include/assimp/vector3.inl \
+ /usr/include/assimp/color4.inl /usr/include/assimp/matrix3x3.inl \
+ /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
+ /usr/include/c++/16/bits/algorithmfwd.h \
+ /usr/include/c++/16/bits/stl_heap.h \
+ /usr/include/c++/16/bits/uniform_int_dist.h \
+ /usr/include/c++/16/bits/stl_tempbuf.h \
+ /usr/include/c++/16/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/16/pstl/execution_defs.h \
+ /usr/include/assimp/matrix4x4.inl /usr/include/assimp/MathFunctions.h \
+ /usr/include/assimp/quaternion.inl /usr/include/assimp/scene.h \
+ /usr/include/assimp/texture.h /usr/include/assimp/Compiler/pushpack1.h \
+ /usr/include/assimp/Compiler/poppack1.h /usr/include/assimp/mesh.h \
+ /usr/include/assimp/aabb.h /usr/include/c++/16/unordered_set \
+ /usr/include/c++/16/bits/unordered_set.h /usr/include/assimp/light.h \
+ /usr/include/assimp/camera.h /usr/include/assimp/material.h \
+ /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
+ /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
+ /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/bits/stl_map.h \
+ /usr/include/c++/16/bits/stl_multimap.h

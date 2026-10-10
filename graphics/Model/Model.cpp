@@ -1,21 +1,35 @@
 #include "Model.h"
 
+#include <Animator/Animator.h>
+
 #include <stb_image.h>
 
 #include <algorithm>
 #include <cfloat>
 
 namespace {
-glm::mat4 toGLM(const aiMatrix4x4& m){
-  glm::mat4 result;
-  for(unsigned int c = 0; c < 4; c++)
-    for(unsigned int r = 0; r < 4; r++)
-      result[c][r] = m[r][c];
-  return result;
-}
+  glm::mat4 toGLM(const aiMatrix4x4& m){
+    glm::mat4 result;
+    for(unsigned int c = 0; c < 4; c++)
+      for(unsigned int r = 0; r < 4; r++)
+        result[c][r] = m[r][c];
+    return result;
+  }
 }
 
 void Model::Draw(Shader& shader){
+  shader.bind();
+  for(unsigned int i = 0; i < meshes.size(); i++)
+    meshes[i].Draw(shader);
+}
+
+void Model::Draw(Shader& shader, Animator& animator){
+  shader.bind();
+  animator.SetRotation(m_rotation);
+  auto transforms = animator.GetFinalBoneMatrices();
+  for(int i = 0; i < (int)transforms.size(); i++)
+    shader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]", transforms[i]);
+
   for(unsigned int i = 0; i < meshes.size(); i++)
     meshes[i].Draw(shader);
 }
@@ -42,9 +56,6 @@ void Model::loadModel(std::string path){
   transform = glm::scale(glm::mat4(1.0f), glm::vec3(scale)) * glm::translate(glm::mat4(1.0f), -center);
 
   processNode(scene->mRootNode, scene, glm::mat4(1.0f));
-
-  std::cout << "Model loaded: " << meshes.size() << " meshes, scaled by "
-            << scale << ", recentered at " << center.x << ", " << center.y << ", " << center.z << std::endl;
 }
 
 void Model::computeBounds(aiNode* node, const aiScene* scene, const glm::mat4& parentTransform, glm::vec3& minPos, glm::vec3& maxPos){
@@ -71,7 +82,8 @@ void Model::processNode(aiNode* node, const aiScene* scene, const glm::mat4& par
 
   for(unsigned int i=0;i<node->mNumMeshes;i++){
     aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
-    meshes.push_back(processMesh(mesh, scene, transform * worldTransform));
+    glm::mat4 meshTransform = mesh->HasBones() ? transform : transform * worldTransform;
+    meshes.push_back(processMesh(mesh, scene, meshTransform));
   }
 
   for(unsigned int i=0;i<node->mNumChildren;i++){
@@ -88,6 +100,9 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene, const glm::mat4& mes
 
   for(unsigned int i=0;i<mesh->mNumVertices;i++){
     Vertex vertex{};
+
+    SetVertexBoneDataToDefault(vertex);
+
     vertex.Position = glm::vec3(mesh->mVertices[i].x, mesh->mVertices[i].y, mesh->mVertices[i].z);
     if(mesh->HasNormals()){
       vertex.Normal = glm::normalize(normalMatrix * glm::vec3(mesh->mNormals[i].x, mesh->mNormals[i].y, mesh->mNormals[i].z));
@@ -131,6 +146,8 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene, const glm::mat4& mes
     std::vector<Texture> normalMaps = loadMaterialTextures(material, aiTextureType_HEIGHT, "texture_normal", scene);
     textures.insert(textures.end(), normalMaps.begin(), normalMaps.end());
   }
+
+  ExtractBoneWeightData(vertices, mesh, scene);
 
   return Mesh(vertices, indices, textures, meshTransform, baseColor);
 }
@@ -220,5 +237,48 @@ unsigned int Model::TextureFromFile(const char* path, const aiScene* scene){
   return textureID;
 }
 
+void Model::SetVertexBoneDataToDefault(Vertex &vertex){
+  for(int i = 0; i < MAX_BONE_INFLUENCE; i++){
+    vertex.m_BoneIDs[i] = -1;
+    vertex.m_Weights[i] = 0.0f;
+  }
+}
 
+void Model::SetVertexBoneData(Vertex &vertex, int boneID, float weight){
+  for(int i = 0; i < MAX_BONE_INFLUENCE; i++){
+    if(vertex.m_BoneIDs[i] < 0){
+      vertex.m_BoneIDs[i] = boneID;
+      vertex.m_Weights[i] = weight;
+      return;
+    }
+  }
+}
+
+void Model::ExtractBoneWeightData(std::vector<Vertex>& vertices, aiMesh* mesh, const aiScene* scene){
+  for(unsigned int boneIndex = 0; boneIndex < mesh->mNumBones; boneIndex++){
+    aiBone* bone = mesh->mBones[boneIndex];
+    std::string boneName(bone->mName.C_Str());
+
+    int boneID = -1;
+    if(m_BoneInfoMap.find(boneName) == m_BoneInfoMap.end()){
+      BoneInfo newBoneInfo;
+      newBoneInfo.id = m_BoneCounter;
+      newBoneInfo.offset = toGLM(bone->mOffsetMatrix);
+      m_BoneInfoMap[boneName] = newBoneInfo;
+      boneID = m_BoneCounter;
+      m_BoneCounter++;
+    }
+    else{
+      boneID = m_BoneInfoMap[boneName].id;
+    }
+
+    for(unsigned int weightIndex = 0; weightIndex < bone->mNumWeights; weightIndex++){
+      aiVertexWeight weight = bone->mWeights[weightIndex];
+      unsigned int vertexID = weight.mVertexId;
+      float vertexWeight = weight.mWeight;
+
+      SetVertexBoneData(vertices[vertexID], boneID, vertexWeight);
+    }
+  }
+}
 

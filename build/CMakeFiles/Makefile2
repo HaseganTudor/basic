@@ -91,7 +91,7 @@ clean: CMakeFiles/basic.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=7,8 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=10,11 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -108,7 +108,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=7,8 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=10,11 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -123,7 +123,7 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/stb_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=9,10 "Built target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=12,13 "Built target stb_image"
 .PHONY : CMakeFiles/stb_image.dir/all
 
 # Build rule for subdir invocation for target.
@@ -140,7 +140,7 @@ stb_image: CMakeFiles/stb_image.dir/rule
 # codegen rule for target.
 CMakeFiles/stb_image.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stb_image.dir/build.make CMakeFiles/stb_image.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=9,10 "Finished codegen for target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=12,13 "Finished codegen for target stb_image"
 .PHONY : CMakeFiles/stb_image.dir/codegen
 
 # clean rule for target.
@@ -156,12 +156,12 @@ CMakeFiles/basic.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/basic.dir/all: CMakeFiles/stb_image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target basic"
 .PHONY : CMakeFiles/basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/basic/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/basic/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/basic/build/CMakeFiles 0
 .PHONY : CMakeFiles/basic.dir/rule
@@ -173,7 +173,7 @@ basic: CMakeFiles/basic.dir/rule
 # codegen rule for target.
 CMakeFiles/basic.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target basic"
 .PHONY : CMakeFiles/basic.dir/codegen
 
 # clean rule for target.

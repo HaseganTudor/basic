@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/basic.dir/link.d"
+  "CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o"
+  "CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o.d"
+  "CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o"
+  "CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o.d"
+  "CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o"
+  "CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o.d"
   "CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o"
   "CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o.d"
   "CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o"

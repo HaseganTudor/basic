@@ -142,13 +142,58 @@ CMakeFiles/basic.dir/graphics/Model/Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/basic.dir/graphics/Model/Model.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/basic/graphics/Model/Model.cpp -o CMakeFiles/basic.dir/graphics/Model/Model.cpp.s
 
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o: CMakeFiles/basic.dir/flags.make
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o: /home/tudor/basic/graphics/Bone/Bone.cpp
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o: CMakeFiles/basic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o -MF CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o.d -o CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o -c /home/tudor/basic/graphics/Bone/Bone.cpp
+
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor/basic/graphics/Bone/Bone.cpp > CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.i
+
+CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/basic/graphics/Bone/Bone.cpp -o CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.s
+
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o: CMakeFiles/basic.dir/flags.make
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o: /home/tudor/basic/graphics/Animation/Animation.cpp
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o: CMakeFiles/basic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o -MF CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o.d -o CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o -c /home/tudor/basic/graphics/Animation/Animation.cpp
+
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor/basic/graphics/Animation/Animation.cpp > CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.i
+
+CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/basic/graphics/Animation/Animation.cpp -o CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.s
+
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o: CMakeFiles/basic.dir/flags.make
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o: /home/tudor/basic/graphics/Animator/Animator.cpp
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o: CMakeFiles/basic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o -MF CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o.d -o CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o -c /home/tudor/basic/graphics/Animator/Animator.cpp
+
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor/basic/graphics/Animator/Animator.cpp > CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.i
+
+CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/basic/graphics/Animator/Animator.cpp -o CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.s
+
 # Object files for target basic
 basic_OBJECTS = \
 "CMakeFiles/basic.dir/src/main.cpp.o" \
 "CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o" \
 "CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o" \
 "CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o" \
-"CMakeFiles/basic.dir/graphics/Model/Model.cpp.o"
+"CMakeFiles/basic.dir/graphics/Model/Model.cpp.o" \
+"CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o" \
+"CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o" \
+"CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o"
 
 # External object files for target basic
 basic_EXTERNAL_OBJECTS =
@@ -158,6 +203,9 @@ basic: CMakeFiles/basic.dir/graphics/Mesh/Mesh.cpp.o
 basic: CMakeFiles/basic.dir/graphics/Shader/Shader.cpp.o
 basic: CMakeFiles/basic.dir/graphics/Camera/Camera.cpp.o
 basic: CMakeFiles/basic.dir/graphics/Model/Model.cpp.o
+basic: CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o
+basic: CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o
+basic: CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o
 basic: CMakeFiles/basic.dir/build.make
 basic: CMakeFiles/basic.dir/compiler_depend.ts
 basic: /usr/lib/libglfw.so.3.5
@@ -168,7 +216,7 @@ basic: /usr/lib/libGLX.so
 basic: /usr/lib/libOpenGL.so
 basic: /usr/lib/libz.so
 basic: CMakeFiles/basic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tudor/basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable basic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/basic.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying resources/ to build output"
 	/usr/bin/cmake -E copy_directory /home/tudor/basic/resources /home/tudor/basic/build/resources

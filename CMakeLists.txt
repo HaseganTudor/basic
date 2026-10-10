@@ -35,6 +35,9 @@ add_executable(basic
   graphics/Shader/Shader.cpp
   graphics/Camera/Camera.cpp
   graphics/Model/Model.cpp
+  graphics/Bone/Bone.cpp
+  graphics/Animation/Animation.cpp
+  graphics/Animator/Animator.cpp
 )
 
 target_include_directories(basic PRIVATE

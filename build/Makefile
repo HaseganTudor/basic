@@ -155,6 +155,78 @@ basic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/build
 .PHONY : basic/fast
 
+graphics/Animation/Animation.o: graphics/Animation/Animation.cpp.o
+.PHONY : graphics/Animation/Animation.o
+
+# target to build an object file
+graphics/Animation/Animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o
+.PHONY : graphics/Animation/Animation.cpp.o
+
+graphics/Animation/Animation.i: graphics/Animation/Animation.cpp.i
+.PHONY : graphics/Animation/Animation.i
+
+# target to preprocess a source file
+graphics/Animation/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.i
+.PHONY : graphics/Animation/Animation.cpp.i
+
+graphics/Animation/Animation.s: graphics/Animation/Animation.cpp.s
+.PHONY : graphics/Animation/Animation.s
+
+# target to generate assembly for a file
+graphics/Animation/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.s
+.PHONY : graphics/Animation/Animation.cpp.s
+
+graphics/Animator/Animator.o: graphics/Animator/Animator.cpp.o
+.PHONY : graphics/Animator/Animator.o
+
+# target to build an object file
+graphics/Animator/Animator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o
+.PHONY : graphics/Animator/Animator.cpp.o
+
+graphics/Animator/Animator.i: graphics/Animator/Animator.cpp.i
+.PHONY : graphics/Animator/Animator.i
+
+# target to preprocess a source file
+graphics/Animator/Animator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.i
+.PHONY : graphics/Animator/Animator.cpp.i
+
+graphics/Animator/Animator.s: graphics/Animator/Animator.cpp.s
+.PHONY : graphics/Animator/Animator.s
+
+# target to generate assembly for a file
+graphics/Animator/Animator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.s
+.PHONY : graphics/Animator/Animator.cpp.s
+
+graphics/Bone/Bone.o: graphics/Bone/Bone.cpp.o
+.PHONY : graphics/Bone/Bone.o
+
+# target to build an object file
+graphics/Bone/Bone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o
+.PHONY : graphics/Bone/Bone.cpp.o
+
+graphics/Bone/Bone.i: graphics/Bone/Bone.cpp.i
+.PHONY : graphics/Bone/Bone.i
+
+# target to preprocess a source file
+graphics/Bone/Bone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.i
+.PHONY : graphics/Bone/Bone.cpp.i
+
+graphics/Bone/Bone.s: graphics/Bone/Bone.cpp.s
+.PHONY : graphics/Bone/Bone.s
+
+# target to generate assembly for a file
+graphics/Bone/Bone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.s
+.PHONY : graphics/Bone/Bone.cpp.s
+
 graphics/Camera/Camera.o: graphics/Camera/Camera.cpp.o
 .PHONY : graphics/Camera/Camera.o
 
@@ -334,6 +406,15 @@ help:
 	@echo "... basic"
 	@echo "... glad"
 	@echo "... stb_image"
+	@echo "... graphics/Animation/Animation.o"
+	@echo "... graphics/Animation/Animation.i"
+	@echo "... graphics/Animation/Animation.s"
+	@echo "... graphics/Animator/Animator.o"
+	@echo "... graphics/Animator/Animator.i"
+	@echo "... graphics/Animator/Animator.s"
+	@echo "... graphics/Bone/Bone.o"
+	@echo "... graphics/Bone/Bone.i"
+	@echo "... graphics/Bone/Bone.s"
 	@echo "... graphics/Camera/Camera.o"
 	@echo "... graphics/Camera/Camera.i"
 	@echo "... graphics/Camera/Camera.s"

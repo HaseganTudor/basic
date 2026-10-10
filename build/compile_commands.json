@@ -40,5 +40,23 @@
   "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Model/Model.cpp.o -c /home/tudor/basic/graphics/Model/Model.cpp",
   "file": "/home/tudor/basic/graphics/Model/Model.cpp",
   "output": "CMakeFiles/basic.dir/graphics/Model/Model.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o -c /home/tudor/basic/graphics/Bone/Bone.cpp",
+  "file": "/home/tudor/basic/graphics/Bone/Bone.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Bone/Bone.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o -c /home/tudor/basic/graphics/Animation/Animation.cpp",
+  "file": "/home/tudor/basic/graphics/Animation/Animation.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Animation/Animation.cpp.o"
+},
+{
+  "directory": "/home/tudor/basic/build",
+  "command": "/usr/bin/c++  -I/home/tudor/basic/graphics -I/home/tudor/basic/thirdparty/glad/include -I/home/tudor/basic/thirdparty/stb -I/home/tudor/basic/thirdparty/glm -std=gnu++17 -o CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o -c /home/tudor/basic/graphics/Animator/Animator.cpp",
+  "file": "/home/tudor/basic/graphics/Animator/Animator.cpp",
+  "output": "CMakeFiles/basic.dir/graphics/Animator/Animator.cpp.o"
 }
 ]

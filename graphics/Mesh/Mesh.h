@@ -8,10 +8,15 @@
 
 #include <Shader/Shader.h>
 
+#define MAX_BONE_INFLUENCE 4
+
 struct Vertex{
   glm::vec3 Position;
   glm::vec3 Normal;
   glm::vec2 TexCoords;
+
+  int m_BoneIDs[MAX_BONE_INFLUENCE];
+  float m_Weights[MAX_BONE_INFLUENCE];
 };
 
 struct Texture{
@@ -29,12 +34,16 @@ public:
   Mesh() = default;
   Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::vector<Texture> textures,
       glm::mat4 transform = glm::mat4(1.0f), glm::vec3 baseColor = glm::vec3(1.0f))
-    : vertices(vertices), indices(indices), textures(textures), transform(transform), baseColor(baseColor) { setupMesh(); };
+    : vertices(vertices), indices(indices), textures(textures), transform(transform), baseColor(baseColor) 
+    {
+      setupMesh();
+    };
 
   static Mesh Square();
   static Mesh Cube();
 
   void Draw(Shader& shader);
+
 private:
   unsigned int VAO, VBO, EBO;
   glm::mat4 transform;

@@ -261,6 +261,19 @@ CMakeFiles/basic.dir/graphics/Model/Model.cpp.o: \
  /home/tudor/basic/thirdparty/glm/glm/detail/type_half.inl \
  /home/tudor/basic/thirdparty/glm/glm/integer.hpp \
  /home/tudor/basic/thirdparty/glm/glm/detail/func_integer.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/matrix_transform.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_projection.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/../gtc/constants.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/../gtc/constants.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_projection.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_clip_space.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_clip_space.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_transform.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/../ext/matrix_transform.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtc/matrix_transform.inl \
  /usr/include/assimp/Importer.hpp /usr/include/assimp/types.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/assimp/defs.h \
  /usr/include/assimp/config.h /usr/include/assimp/vector2.h \
@@ -315,22 +328,12 @@ CMakeFiles/basic.dir/graphics/Model/Model.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
+ /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/bits/stl_map.h \
+ /usr/include/c++/16/bits/stl_multimap.h \
  /home/tudor/basic/graphics/Shader/Shader.h \
  /home/tudor/basic/thirdparty/glm/glm/gtc/type_ptr.hpp \
  /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/quaternion.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/constants.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/scalar_constants.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/../detail/setup.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/scalar_constants.inl \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/constants.inl \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/matrix_transform.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_clip_space.inl \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_transform.hpp \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/../ext/matrix_transform.inl \
- /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../gtc/matrix_transform.inl \
  /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../ext/vector_relational.hpp \
  /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../ext/vector_relational.inl \
  /home/tudor/basic/thirdparty/glm/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
@@ -409,5 +412,19 @@ CMakeFiles/basic.dir/graphics/Model/Model.cpp.o: \
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/16/bits/fstream.tcc \
  /home/tudor/basic/graphics/Mesh/Mesh.h \
+ /home/tudor/basic/graphics/Animator/Animator.h \
+ /home/tudor/basic/graphics/Animation/Animation.h \
+ /home/tudor/basic/graphics/Bone/Bone.h \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/quaternion.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../ext/quaternion_exponential.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../ext/quaternion_exponential.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/norm.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/component_wise.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../detail/setup.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/component_wise.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../ext/scalar_common.hpp \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/../gtx/../ext/scalar_common.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/../gtx/norm.inl \
+ /home/tudor/basic/thirdparty/glm/glm/gtx/quaternion.inl \
  /home/tudor/basic/thirdparty/stb/stb_image.h \
  /usr/include/c++/16/stdlib.h
