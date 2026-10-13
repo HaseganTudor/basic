@@ -19,19 +19,23 @@ namespace {
 
 void Model::Draw(Shader& shader){
   shader.bind();
+  shader.setBool("isAnimated", false);
+
   for(unsigned int i = 0; i < meshes.size(); i++)
     meshes[i].Draw(shader);
+  shader.unbind();
 }
 
 void Model::Draw(Shader& shader, Animator& animator){
   shader.bind();
+  shader.setBool("isAnimated", true);
   animator.SetRotation(m_rotation);
-  auto transforms = animator.GetFinalBoneMatrices();
-  for(int i = 0; i < (int)transforms.size(); i++)
-    shader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]", transforms[i]);
+
+  shader.setMat4Array("finalBonesMatrices", animator.GetFinalBoneMatrices());
 
   for(unsigned int i = 0; i < meshes.size(); i++)
     meshes[i].Draw(shader);
+  shader.unbind();
 }
 
 void Model::loadModel(std::string path){

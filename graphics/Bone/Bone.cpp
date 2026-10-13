@@ -1,5 +1,7 @@
 #include "Bone.h"
 
+#include <algorithm>
+
 Bone::Bone(const std::string& name, int ID, const aiNodeAnim* channel)
   : m_Name(name), m_ID(ID), m_LocalTransform(1.0f)
 {
@@ -41,28 +43,26 @@ void Bone::Update(float animationTime){
   m_LocalTransform = translation * rotation * scale;
 }
 
-int Bone::GetPositionIndex(float animationTime){
-  for(int index = 0; index < m_NumPositions - 1; ++index){
-    if(animationTime < m_Positions[index + 1].timeStamp)
-      return index;
+namespace {
+  template <typename Key>
+  int FindKeyIndex(const std::vector<Key>& keys, float animationTime){
+    auto it = std::upper_bound(keys.begin(), keys.end(), animationTime,
+      [](float time, const Key& key){ return time < key.timeStamp; });
+    int index = static_cast<int>(std::distance(keys.begin(), it)) - 1;
+    return std::clamp(index, 0, static_cast<int>(keys.size()) - 2);
   }
-  assert(0);
+}
+
+int Bone::GetPositionIndex(float animationTime){
+  return FindKeyIndex(m_Positions, animationTime);
 }
 
 int Bone::GetRotationIndex(float animationTime){
-  for(int index = 0; index < m_NumRotations - 1; ++index){
-    if(animationTime < m_Rotations[index + 1].timeStamp)
-      return index;
-  }
-  assert(0);
+  return FindKeyIndex(m_Rotations, animationTime);
 }
 
 int Bone::GetScaleIndex(float animationTime){
-  for(int index = 0; index < m_NumScales - 1; ++index){
-    if(animationTime < m_Scales[index + 1].timeStamp)
-      return index;
-  }
-  assert(0);
+  return FindKeyIndex(m_Scales, animationTime);
 }
 
 glm::mat4 Bone::InterpolatePosition(float animationTime){

@@ -29,6 +29,9 @@ public:
 
   void rotate(const glm::vec3& axis, float angle) {
     m_rotation = glm::rotate(glm::mat4(1.0f), angle, axis) * m_rotation;
+    for(auto& mesh : meshes){
+      mesh.transform = m_rotation * mesh.transform;
+    }
   }
 private:
   std::vector<Mesh> meshes;

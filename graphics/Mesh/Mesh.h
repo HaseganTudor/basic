@@ -30,6 +30,7 @@ public:
   std::vector<Vertex> vertices;
   std::vector<unsigned int> indices;
   std::vector<Texture> textures;
+  glm::mat4 transform;
 
   Mesh() = default;
   Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::vector<Texture> textures,
@@ -46,7 +47,6 @@ public:
 
 private:
   unsigned int VAO, VBO, EBO;
-  glm::mat4 transform;
   glm::vec3 baseColor;
 
   void setupMesh();

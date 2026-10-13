@@ -18,14 +18,15 @@ int main(){
   
   if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){ return -1; }
 
+  glfwSwapInterval(1);
+
   glEnable(GL_DEPTH_TEST);
 
   Shader shader("resources/shaders/vert.glsl", "resources/shaders/frag.glsl");
   Camera camera(window, width, height);
-  Model man("resources/models/CesiumMan.glb");
-  Animation animation("resources/models/CesiumMan.glb", &man, 0);
+  Model man("resources/models/mimi.glb");
+  Animation animation("resources/models/mimi.glb", &man, 0);
   Animator animator(&animation);
-  man.rotate(glm::vec3(0.0f, 1.0f, 0.0f), glm::radians(180.0f));
 
   double lastFrame = 0.0f;
   double currentFrame = 0.0f;
@@ -37,6 +38,7 @@ int main(){
     currentFrame = glfwGetTime();
     float deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
+
     animator.UpdateAnimation(deltaTime);
 
     camera.FreeCamera(shader);

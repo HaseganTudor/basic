@@ -6,6 +6,8 @@
 #include <assimp/scene.h>
 #include <glm/glm.hpp>
 
+#include <unordered_map>
+
 #include <Bone/Bone.h>
 
 struct AssimpNodeData {
@@ -33,6 +35,7 @@ private:
   float m_Duration;
   int m_TicksPerSecond;
   std::vector<Bone> m_Bones;
+  std::unordered_map<std::string, Bone*> m_BoneMap;
   AssimpNodeData m_RootNode;
   std::map<std::string, BoneInfo> m_BoneInfoMap;
 };
